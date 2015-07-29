@@ -1064,8 +1064,8 @@ on_menu_create_new_object(GtkMenuItem *menuitem, const gchar *type)
 				treebrowser_browse(uri, refresh_root ? NULL : &iter);
 				if (treebrowser_search(uri_new, NULL))
 					treebrowser_rename_current();
-				if (utils_str_equal(type, "file") && CONFIG_OPEN_NEW_FILES == TRUE)
-					document_open_file(uri_new,FALSE, NULL,NULL);
+				/*if (utils_str_equal(type, "file") && CONFIG_OPEN_NEW_FILES == TRUE)
+					document_open_file(uri_new,FALSE, NULL,NULL);*/
 			}
 		}
 		g_free(uri_new);
